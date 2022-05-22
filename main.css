@@ -189,7 +189,7 @@ Nav-menu
 #hero {
   width: 100%;
   height: 100vh;
-  background: url("./Aseet/hero-bgimg.jpg") top center;
+  background: url("./Aseet/hero-bg.jpg") top center;
   background-size: cover;
 }
 
@@ -253,16 +253,147 @@ Nav-menu
 /*--------------------------------------------------------------
 # Sections General
 --------------------------------------------------------------*/
-/* section {
-  margin-left: 100px;
+
+.section {
+  margin-left: 2.3125rem;
   padding: 60px 0;
   overflow: hidden;
-} */
+}
+.section .container .section-title {
+  margin-bottom: 40px;
+}
+.section .container .section-title > h2 {
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+}
+
+.section-bg {
+  background: #f5f8fd;
+}
+.section-title h2::after {
+  content: "";
+  position: relative;
+  display: block;
+  width: 50px;
+  height: 3px;
+  background: #149ddd;
+  bottom: 0;
+  left: 0;
+}
+
+.section-title p {
+  margin-bottom: 0;
+}
 
 /* ==========================================================
 * About Section
 ============================================================= */
+.about .content h3 {
+  font-weight: 700;
+  font-size: 26px;
+  color: #173b6c;
+}
 
-.aboutContainer {
-  border: #040b14 solid 2px;
+#about .content ul {
+  list-style: none;
+  padding: 0;
+}
+
+.about .content ul li i {
+  font-size: 20px;
+  padding-right: 5px;
+  margin-bottom: 20px;
+  color: #149ddd;
+}
+/* ------------------------------------------
+=====Resume
+--------------------------------------------- */
+.resume .resume-title {
+  font-size: 26px;
+  font-weight: 700;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #050d18;
+}
+
+.resume .resume-item {
+  padding: 0 0 20px 20px;
+  margin-top: -2px;
+  border-left: 2px solid #1f5297;
+  position: relative;
+}
+
+.resume .resume-item h4 {
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+  color: #050d18;
+  margin-bottom: 10px;
+}
+
+.resume .resume-item h5 {
+  font-size: 16px;
+  background: #e4edf9;
+  padding: 5px 15px;
+  display: inline-block;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.resume-item ul {
+  padding-left: 20px;
+}
+
+.resume .resume-item ul li {
+  padding-bottom: 10px;
+}
+
+.resume .resume-item:last-child {
+  padding-bottom: 0;
+}
+
+.resume-item a {
+  text-decoration: none;
+}
+
+.resume .resume-item::before {
+  content: "";
+  background: #fff;
+  border: 2px solid #1f5297;
+  border-radius: 50%;
+  height: 15px;
+  width: 15px;
+  position: absolute;
+  top: 0;
+  left: -9px;
+}
+
+/* ------------------------------------------
+===== Services
+--------------------------------------------- */
+.service-item .icon {
+  background-color: #149ddd;
+  border: solid 2px #149ddd;
+  color: white;
+  height: 71px;
+  width: 71px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: ease-in-out 0.5s;
+}
+.service-item .icon i {
+  font-size: 1.875rem;
+}
+.service-item h5 {
+  font-weight: 700;
+  margin-top: 10px;
+  color: #343a40;
+  transition: 0.3s;
+}
+
+.service-item:hover .icon {
+  background-color: white;
+  color: #149ddd;
 }
