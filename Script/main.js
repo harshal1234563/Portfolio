@@ -1,7 +1,6 @@
 !(function ($) {
   "use strict";
 
-
   // Smooth scroll for the navigation menu and links with .scrollto classes
   $(document).on("click", ".nav-menu a, .scrollto", function (e) {
     if (
@@ -137,29 +136,9 @@
       offset: "80%",
     }
   );
-
+  
   // Porfolio isotope and filter
-  $(window).on("load", function () {
-    var portfolioIsotope = $(".portfolio-container").isotope({
-      itemSelector: ".portfolio-item",
-      layoutMode: "fitRows",
-    });
-
-    $("#portfolio-flters li").on("click", function () {
-      $("#portfolio-flters li").removeClass("filter-active");
-      $(this).addClass("filter-active");
-
-      portfolioIsotope.isotope({
-        filter: $(this).data("filter"),
-      });
-      aos_init();
-    });
-
-    // Initiate venobox (lightbox feature used in portofilo)
-    $(document).ready(function () {
-      $(".venobox").venobox();
-    });
-  });
+  $(window).on("load", function () {});
 
   // Testimonials carousel (uses the Owl Carousel library)
   $(".testimonials-carousel").owlCarousel({
